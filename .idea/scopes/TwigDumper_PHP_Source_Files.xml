@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="TwigDumper PHP Source Files" pattern="file[TwigDumper]:src//*" />
+</component>
