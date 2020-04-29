@@ -19,10 +19,17 @@ class TwigDumper extends AbstractExtension
      */
     public function getFunctions()
     {
-        return [new TwigFunction('dump', [$this, 'dump'], [
+        $callable = [$this, 'dump'];
+
+        $config = [
             'needs_context' => true,
             'needs_environment' => true,
-        ]),
+        ];
+
+        return [
+            new TwigFunction('dump', $callable, $config),
+            new TwigFunction('dd', $callable, $config),
+            new TwigFunction('d', $callable, $config),
         ];
     }
 
