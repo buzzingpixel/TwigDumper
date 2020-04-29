@@ -1,6 +1,6 @@
 {
     "name": "buzzingpixel/twig-dumper",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A Twig Dumper that uses the Symfony VarDumper component",
     "authors": [
         {
@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": ">=7.2",
-        "symfony/var-dumper": "^4.3",
-        "twig/twig": "^2.8"
+        "symfony/var-dumper": "^4.3|^5.0",
+        "twig/twig": "^2.8|^3.0"
     },
     "require-dev": {
         "codedungeon/phpunit-result-printer": "^0.26.2",
