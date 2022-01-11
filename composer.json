@@ -1,6 +1,5 @@
 {
     "name": "buzzingpixel/twig-dumper",
-    "version": "1.0.2",
     "description": "A Twig Dumper that uses the Symfony VarDumper component",
     "authors": [
         {
@@ -11,7 +10,7 @@
     ],
     "require": {
         "php": ">=7.2",
-        "symfony/var-dumper": "^4.3|^5.0",
+        "symfony/var-dumper": "^4.3|^5.0|^6.0",
         "twig/twig": "^2.8|^3.0"
     },
     "require-dev": {
@@ -39,7 +38,11 @@
     "config": {
         "bin-compat": "full",
         "sort-packages": true,
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
     },
     "extra": {
         "twigExtensions": [
